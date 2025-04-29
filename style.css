@@ -1,0 +1,203 @@
+:root {
+    --primary: #6f4ef2;
+    --secondary: #f6f1ff;
+    --accent: #ffd700;
+    --text: #2c2c2c;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    color: var(--text);
+  }
+  
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: white;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  .hero {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 10%;
+    background: var(--secondary);
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .hero .text {
+    flex: 1;
+    min-width: 260px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .btn-cta {
+    background: var(--primary);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .hero .btn-cta:hover {
+    background: #5d3ee6;
+    transform: scale(1.05);
+  }
+  
+  .hero .illus img {
+    width: 300px;
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .donation-box {
+    padding: 60px 10%;
+    text-align: center;
+  }
+  
+  .donation-box h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .account-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .account {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+  }
+  
+  .wallet-box {
+    margin-top: 30px;
+    font-size: 18px;
+  }
+  
+  .qris-box {
+    margin: 40px 0;
+  }
+  
+  .qris-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .qris-img {
+    width: 220px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    background: #f8f8f8;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  
+    .hero .illus img {
+      width: 200px;
+      margin-top: 30px;
+    }
+  
+    .qris-img {
+      width: 180px;
+    }
+  
+    .account-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  .logo-img {
+    height: 40px;
+    width: auto;
+  }
+  
+  .account img {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .wallet-box h3 img.icon-wallet {
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .qris-img {
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .logo-img {
+      height: 32px;
+    }
+  
+    .qris-img {
+      width: 180px;
+    }
+  }
+  
